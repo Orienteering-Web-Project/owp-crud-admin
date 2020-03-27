@@ -1,6 +1,6 @@
 {
-    "name": "owp/owp-entry",
-    "description": "Package OWP Entry : gestion des inscriptions pour les système OWP",
+    "name": "owp/owp-crud-admin",
+    "description": "Package OWP CRUD Admin",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
@@ -9,16 +9,12 @@
             "email": "guillou.quentin.29@gmail.com"
         }
     ],
-    "require": {
-        "owp/owp-core": "*",
-        "owp/owp-event": "*"
-    },
     "config": {
         "optimize-autoloader": true
     },
     "autoload": {
         "psr-4": {
-            "Owp\\OwpEntry\\": ""
+            "Owp\\OwpCrudAdmin\\": ""
         }
     }
 }
