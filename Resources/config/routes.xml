@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes xmlns="http://symfony.com/schema/routing" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+    <route id="owp_entry_quick" path="/event/{slug}/entry/quick">
+        <default key="_controller">Owp\OwpEntry\Controller\EntryController::entryQuick</default>
+    </route>
+    <route id="owp_entry_add_form" path="/event/{slug}/entry/{mode}/{option}">
+        <default key="_controller">Owp\OwpEntry\Controller\EntryController::form</default>
+        <default key="mode">open|club|team</default>
+        <default key="option"></default>
+    </route>
+    <route id="owp_entry_add_submit" path="/entry/{event}/{mode}/{option}">
+        <default key="_controller">Owp\OwpEntry\Controller\EntryController::submit</default>
+        <default key="mode">open|club|team</default>
+        <default key="option"></default>
+    </route>
+    <route id="owp_entry_export" path="/event/{slug}/export/{format}">
+        <default key="_controller">Owp\OwpEntry\Controller\EntryController::export</default>
+    </route>
+
+    <route id="owp_people_delete" path="/people/{id}/delete">
+        <default key="_controller">Owp\OwpEntry\Controller\PeopleController::delete</default>
+    </route>
+    <route id="owp_people_update" path="/people/{id}/edit">
+        <default key="_controller">Owp\OwpEntry\Controller\PeopleController::update</default>
+    </route>
+
+    <route id="owp_team_delete" path="/team/{id}/delete">
+        <default key="_controller">Owp\OwpEntry\Controller\TeamController::delete</default>
+    </route>
+    <route id="owp_team_update" path="/team/{id}/edit">
+        <default key="_controller">Owp\OwpEntry\Controller\TeamController::update</default>
+    </route>
+</routes>

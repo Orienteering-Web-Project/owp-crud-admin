@@ -1,0 +1,24 @@
+{
+    "name": "owp/owp-entry",
+    "description": "Package OWP Entry : gestion des inscriptions pour les système OWP",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Quentin GUILLOU",
+            "email": "guillou.quentin.29@gmail.com"
+        }
+    ],
+    "require": {
+        "owp/owp-core": "*",
+        "owp/owp-event": "*"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Owp\\OwpEntry\\": ""
+        }
+    }
+}
